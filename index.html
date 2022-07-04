@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="container">
+        <fieldset>
+
+     <div class="header">
+      <h2>Formulario de Clientes</h2>
+
+</div>
+
+     <form class="form" id="form">
+
+        <div class="form-control">
+            <label for="username" >Nome</label>
+                <input type="text" id="username">
+            <i><img class="img-success" src="success-icon.svg" alt=""></i>
+                    <i><img class="img-error" src="error-icon.svg" alt=""></i>
+                    <small>Error</small>
+
+        </div>
+        <div class="form-control ">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <i><img class="img-success" src="success-icon.svg" alt=""></i>
+                    <i><img class="img-error" src="error-icon.svg" alt=""></i>
+                    <small>Error</small>
+                    </div>
+            
+                    <div class="form-control ">
+                        <label for="cpf">CPF</label>
+                        <input type="number" id="cpf" maxlength="11" >
+                        <i><img class="img-success" src="success-icon.svg" alt=""></i>
+                                <i><img class="img-error" src="error-icon.svg" alt=""></i>
+                                <small>Error</small>
+                    
+
+        </div>
+       
+                
+                <p>Gênero</p>
+                <input type="radio" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" value="transgenero">
+                <label for="transgenero">Transgenero</label>
+                <input type="radio" name="genero" value="outros">
+                <label for="outros">Outros</label>
+                <br><br>
+
+                <div class="form-control">
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data">
+                    <i><img class="img-success" src="success-icon.svg" alt=""></i>
+                <i><img class="img-error" src="error-icon.svg" alt=""></i>
+                <small>Error</small>
+                    
+                    </div>
+        
+       
+
+        
+        <div class="form-control">
+            <label for="password">Senha</label>
+            <input type="password" id="password">
+            <i><img class="img-success" src="success-icon.svg" alt=""></i>
+                    <i><img class="img-error" src="error-icon.svg" alt=""></i>
+                    <small>Error</small>
+
+        </div>
+        <div class="form-control">
+            <label for="passwordtwo">Confirmar senha</label>
+            <input type="password" id="passwordtwo">
+            <i><img class="img-success" src="success-icon.svg" alt=""></i>
+                    <i><img class="img-error" src="error-icon.svg" alt=""></i>
+                    <small>Error</small>
+                </div>
+                <button type="submit" id="cadastro">Cadastrar</button>
+                <button type="reset" id="cadastro"> Limpar </button>
+                </fieldset>
+        </div>
+     </form>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
